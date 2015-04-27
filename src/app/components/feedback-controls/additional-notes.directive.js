@@ -6,7 +6,15 @@ function AdditionalNotes() {
     replace: true,
     templateUrl: 'app/components/feedback-controls/additional-notes.html',
     scope: {
-      notes: '='
+      notes: '=',
+      score: '='
+    },
+    link: (scope) => {
+      scope.$watch( 'notes', (newValue, oldValue) => {
+        if ( newValue !== oldValue && newValue) {
+          console.log( 'additional notes widget link func: ', newValue );  
+        }
+      });
     }
   };
 }

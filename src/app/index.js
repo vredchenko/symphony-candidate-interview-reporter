@@ -3,6 +3,7 @@
 import NavbarCtrl from './components/navbar/navbar.controller';
 import LandingCtrl from './landing/landing.controller';
 import InterviewCtrl from './interview/interview.controller';
+import CompetenciesFactory from './interview/webdev-competencies.factory';
 import ReportCtrl from './report/report.controller';
 import MainCtrl from './main/main.controller';
 
@@ -17,6 +18,7 @@ angular.module('interviewReport', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanit
   .controller('MainCtrl', MainCtrl)
   .directive('competencyRating', CompetencyRating)
   .directive('additionalNotes', AdditionalNotes)
+  .factory('CompetenciesFactory', CompetenciesFactory)
   
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
