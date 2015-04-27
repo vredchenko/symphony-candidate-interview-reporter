@@ -3,6 +3,9 @@
 class InterviewCtrl {
   constructor ($scope) {
 
+    $scope.a = 0;
+    $scope.b = 0;
+    $scope.c = 'foo';
 
     $scope.competencies = [
       {
@@ -65,7 +68,6 @@ class InterviewCtrl {
       }
       
     ];
-
   }
 }
 

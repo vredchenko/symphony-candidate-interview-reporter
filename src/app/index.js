@@ -5,7 +5,9 @@ import LandingCtrl from './landing/landing.controller';
 import InterviewCtrl from './interview/interview.controller';
 import ReportCtrl from './report/report.controller';
 import MainCtrl from './main/main.controller';
+
 import CompetencyRating from './components/feedback-controls/competency-rating.directive';
+import AdditionalNotes from './components/feedback-controls/additional-notes.directive';
 
 angular.module('interviewReport', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngResource', 'ui.router', 'mgcrea.ngStrap'])
   .controller('LandingCtrl', LandingCtrl)
@@ -14,6 +16,7 @@ angular.module('interviewReport', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanit
   .controller('NavbarCtrl', NavbarCtrl)
   .controller('MainCtrl', MainCtrl)
   .directive('competencyRating', CompetencyRating)
+  .directive('additionalNotes', AdditionalNotes)
   
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider

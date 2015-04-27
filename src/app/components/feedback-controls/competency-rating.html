@@ -1,0 +1,12 @@
+<div class="competency-rating-widget row">
+  <div class="col-md-6">
+    <label for="rated-by-self">Rated by candidate: </label>
+    <input type="range" id="rated-by-self" min="0" max="10" step="1" ng-model="ratedBySelf" />
+    <output for="rated-by-self">{{ratedBySelf}}</output>
+  </div>
+  <div class="col-md-6">
+    <label for="rated-by-peer">Rated by interviewers: </label>
+    <input type="range" id="rated-by-peer" min="0" max="10" step="1" ng-model="ratedByPeer"/>
+    <output for="rated-by-peer">{{ratedByPeer}}</output>  
+  </div>
+</div>
