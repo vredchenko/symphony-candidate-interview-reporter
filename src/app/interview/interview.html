@@ -4,12 +4,10 @@
 
   <h1>Front-End Developer Candidate Interview</h1>
 
-  <competency-rating rated-by-self="a" rated-by-peer="b"></competency-rating>
-  <additional-notes notes="c" score="d"></additional-notes>
-
   <div bs-active-pane="tabs.activeTab" bs-tabs>
     <div ng-repeat="section in competencies" title="{{ section.name }}" bs-pane>
       <p class="intro">{{ section.description }}</p>
+      <competency-rating rated-by-self="a" rated-by-peer="b"></competency-rating>
       <div class="panel-group" role="tablist" aria-multiselectable="true" bs-collapse>
         <div class="panel panel-default" ng-repeat="subsection in section.drilldown">
           <div class="panel-heading" role="tab">
@@ -20,8 +18,13 @@
             </h4>
           </div>
           <div class="panel-collapse" role="tabpanel" bs-collapse-target>
-            <div class="panel-body">
-              {{ subsection.description }}
+            <div class="panel-body row">
+              <div class="section-description col-md-6">
+                {{ subsection.description }}
+              </div>
+              <div class="col-md-6">
+                <additional-notes notes="c" score="d"></additional-notes>
+              </div>
             </div>
           </div>
         </div>
