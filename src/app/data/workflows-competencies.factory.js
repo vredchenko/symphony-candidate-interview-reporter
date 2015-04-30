@@ -8,15 +8,22 @@ function WorkflowsCompetenciesFactory() {
       drilldown: [
         {
           name: 'Processes',
-          description: 'Scrum, Kanban, Waterfall, Team work/size, Work with QA'
+          description: 'Eperience with Scrum, Kanban, Waterfall, Team work/size, working with QAs and BAs'
         },
         {
           name: 'Management tools',
-          description: 'Experience with things like: Jira, Pivotal, Redmine, BaseCamp, Mantis, etc'
+          description: 'Experience with project management and bug-tacking software',
+          items: [
+            'Jira',
+            'Pivotal',
+            'Redmine',
+            'BaseCamp',
+            'Mantis'
+          ]
         },
         {
           name: 'Business communication',
-          description: ''
+          description: 'Experience in verbal and written technical communication'
         },
         {
           name: 'Continuous Integration',

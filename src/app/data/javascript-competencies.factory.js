@@ -9,140 +9,55 @@ function JavascriptCompetenciesFactory() {
         {
           name: 'Language Core',
           description: '',
-          drilldown: [
-            {
-              name: 'Data Types',
-              description: ''
-            },
-            {
-              name: 'Functions and Scope',
-              description: ''
-            },
-            {
-              name: 'Prototypes/Inheritance',
-              description: ''
-            },
-            {
-              name: 'Asynchronous/Promises',
-              description: ''
-            },
-            {
-              name: 'Harmony (ES6)',
-              description: ''
-            }
+          items: [
+            'Data Types',
+            'Functions and Scope',
+            'Prototypes/Inheritance',
+            'Asynchronous/Promises',
+            'Harmony (ES6)'
           ]
         },
         {
           name: 'Frameworks and Libraries',
-          description: '',
-          drilldown: [
-            {
-              name: 'AngularJS',
-              description: ''
-            },
-            {
-              name: 'React / Flux',
-              description: ''
-            },
-            {
-              name: 'Backbone',
-              description: ''
-            },
-            {
-              name: 'ExtJS',
-              description: ''
-            },
-            {
-              name: 'KnockoutJS',
-              description: ''
-            },
-            {
-              name: 'MeteorJS',
-              description: ''
-            },
-            {
-              name: 'JQuery',
-              description: ''
-            },
-            {
-              name: 'Modernizr',
-              description: ''
-            }
+          description: 'Experience with various JS f/e frameworks and tools',
+          items: [
+            'AngularJS',
+            'React / Flux',
+            'Backbone',
+            'ExtJS',
+            'KnockoutJS',
+            'MeteorJS',
+            'JQuery',
+            'Underscore/Lodash',
+            'Modernizr'
           ]
         },
         {
           name: 'NodeJS',
-          description: '',
-          drilldown: [
-            {
-              name: 'Streams',
-              description: ''
-            },
-            {
-              name: 'EventEmitter',
-              description: ''
-            },
-            {
-              name: 'Express or similar',
-              description: ''
-            },
-            {
-              name: 'Message Queues',
-              description: ''
-            }
+          description: 'Experience with NodeJS',
+          items: [
+            'Streams',
+            'EventEmitter',
+            'Express',
+            'Connect',
+            'Koa.js',
+            'Message Queues'
           ]
         },
         {
           name: 'Transport Mechanisms',
-          description: '',
-          drilldown: [
-            {
-              name: 'HTTP',
-              description: ''
-            },
-            {
-              name: 'WebSockets',
-              description: ''
-            },
-            {
-              name: 'CORS',
-              description: ''
-            },
-            {
-              name: 'JSON / XML',
-              description: ''
-            }
-          ]
+          description: 'Understading of the transport layer between the b/e and f/e. Good questions to ask are about TCP/HTTP, WebSockets, CORS, XML and JSON'
         },
         {
           name: 'Visualisation',
-          description: '',
-          drilldown: [
-            {
-              name: 'Canvas',
-              description: ''
-            },
-            {
-              name: 'SVG',
-              description: ''
-            },
-            {
-              name: 'WebGL',
-              description: ''
-            },
-            {
-              name: 'ThreeJS',
-              description: ''
-            },
-            {
-              name: 'Raphael',
-              description: ''
-            },
-            {
-              name: 'D3.js',
-              description: 'http://d3js.org/'
-            }
-
+          description: 'Experience with creating visualisations in the browser',
+          items: [
+            'Canvas',
+            'SVG',
+            'WebGL',
+            'ThreeJS',
+            'Raphael',
+            'D3.js'
           ]
         },
       ]

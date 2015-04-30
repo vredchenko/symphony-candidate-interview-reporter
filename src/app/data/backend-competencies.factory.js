@@ -7,57 +7,49 @@ function BackendCompetenciesFactory() {
       description: 'Ipsum',
       drilldown: [
         {
-          name: 'Java',
-          description: ''
+          name: 'Languages',
+          description: 'Knowledge of various server-side languages',
+          items: [
+            'PHP',
+            'Ruby',
+            'Java',
+            'Python',
+            '.NET'
+          ]
         },
         {
-          name: 'Ruby',
-          description: ''
+          name: 'SQL Databases',
+          description: 'Understanding of relational databases, SQL, normalization. Indexes, different types of joins, etc'
         },
         {
-          name: '.NET',
-          description: ''
-        },
-        {
-          name: 'Python',
-          description: ''
-        },
-        {
-          name: 'SQL',
-          description: ''
-        },
-        {
-          name: 'NoSQL',
-          description: ''
+          name: 'NoSQL Databases',
+          description: 'Experience with NoSQL databases',
+          items: [
+            'MongoDB',
+            'CouchDB',
+            'RethinkDB',
+            'Neo4j'
+          ]
         },
         {
           name: 'In-memory storage',
-          description: 'e.g. Reddis, Memcached'
+          description: 'Improving server response times and performance through holding some or all of the dataset in server Memory',
+          items: [
+            'Memcached',
+            'Reddis'
+          ]
         },
         {
-          name: 'PHP',
-          description: '',
-          drilldown: [
-            {
-              name: 'Drupal',
-              description: ''
-            },
-            {
-              name: 'Wordpress',
-              description: ''
-            },
-            {
-              name: 'Symphony2',
-              description: ''
-            },
-            {
-              name: 'Zend',
-              description: ''
-            },
-            {
-              name: 'CodeIgniter',
-              description: ''
-            }
+          name: 'Systems and Frameworks',
+          description: 'Experience with various CMSs and frameworks',
+          items: [
+            'Django',
+            'Drupal',
+            'Wordpress',
+            'Flask',
+            'Symphony2',
+            'Zend',
+            'CodeIgniter'
           ]
         }
       ]

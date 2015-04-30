@@ -20,7 +20,12 @@
           <div class="panel-collapse" role="tabpanel" bs-collapse-target>
             <div class="panel-body row">
               <div class="section-description col-md-6">
-                {{ subsection.description }}
+                <p>{{ subsection.description }}</p>
+                <ul ng-if="subsection.items.length">
+                  <li ng-repeat="item in subsection.items">
+                    {{item}}
+                  </li>
+                </ul>
               </div>
               <div class="col-md-6">
                 <additional-notes notes="c" score="d"></additional-notes>
